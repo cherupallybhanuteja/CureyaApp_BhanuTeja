@@ -1,0 +1,2 @@
+include ':app', ':loadingballs'
+rootProject.name = "CUREYA_Chatbot"

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteBack"
+    tools:context=".UserGenderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/actionBarGender"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimaryGreen"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgBackArrowGender"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtActionBarGender"
+            android:text="@string/action_bar_title"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:translationX="-17dp"
+            android:textColor="@color/colorWhite"
+
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserGender"
+        app:layout_constraintTop_toBottomOf="@id/actionBarGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        app:civ_border_width="1dp"
+        android:translationY="50dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        app:civ_border_color="@color/colorLightGrey"
+        android:src="@drawable/botface"
+        android:layout_height="wrap_content">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clGenderContainer"
+        app:layout_constraintTop_toBottomOf="@id/imgUserGender"
+        android:id="@+id/txtGenderTitle"
+        android:gravity="center"
+        android:text="@string/gender_title"
+        android:translationY="45dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorDarkGrey"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp"
+
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGenderTitle"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/txtGenderTitle"
+        android:translationY="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/clGenderContainer">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/llGenderFemaleContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/llGenderMaleContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:src="@drawable/female_unselected"
+            android:id="@+id/imgFemaleLogo"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorSecondaryAlphaGreen"
+            android:textSize="18sp"
+            android:gravity="center"
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/llGenderMaleContainer"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/llGenderFemaleContainer"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:padding="10dp"
+            android:layout_height="80dp"
+            android:src="@drawable/male_unselected"
+            android:id="@+id/imgMaleLogo"
+            />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorSecondaryAlphaGreen"
+            android:textSize="18sp"
+            android:gravity="center"
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/clGenderContainer"
+        app:layout_constraintTop_toBottomOf="@id/clGenderContainer"
+        android:id="@+id/txtGenderNext"
+        android:text="@string/next_btn"
+        android:gravity="center"
+        app:fontFamily="@font/roboto_bold"
+        android:textStyle="bold"
+        android:translationY="130dp"
+        android:textColor="@color/colorSecondaryGreen"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18sp"
+
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

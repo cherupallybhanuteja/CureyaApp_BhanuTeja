@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteBack"
+    tools:context=".UserLocationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/actionBarLocation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimaryGreen"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgBackArrowLocation"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtActionBarLocation"
+            android:text="@string/action_bar_title"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:translationX="-17dp"
+            android:textColor="@color/colorWhite"
+
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/imgUserLocation"
+    app:layout_constraintTop_toBottomOf="@id/actionBarLocation"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_width="wrap_content"
+    app:civ_border_width="2dp"
+    android:translationY="56dp"
+    android:layout_marginTop="50dp"
+    android:padding="10dp"
+    app:civ_border_color="@color/colorLightGrey"
+    android:src="@drawable/ic_baseline_person_24"
+    android:layout_height="wrap_content">
+
+</de.hdodenhof.circleimageview.CircleImageView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/llLocation"
+        app:layout_constraintTop_toBottomOf="@id/imgUserLocation"
+        android:id="@+id/txtLocationTitle"
+        android:text="@string/location_title"
+        android:gravity="center"
+        android:translationY="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorDarkGrey"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp"
+
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/llLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:translationY="30dp"
+        android:gravity="center"
+        android:translationX="-10dp"
+        android:layout_marginTop="50dp"
+        android:foregroundGravity="center"
+        app:layout_constraintTop_toBottomOf="@id/txtLocationTitle"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:id="@+id/imgLocation"
+            android:layout_weight="2"
+            android:padding="5dp"
+            app:tint="@color/colorPrimaryGreenAlpha"
+            android:src="@drawable/ic_baseline_location_on_24"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryGreenAlpha"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLocationCityState"
+            android:text="@string/city_state_sample"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/custom_button_rounded"
+        app:layout_constraintTop_toBottomOf="@id/llLocation"
+        android:id="@+id/btnLocationDone"
+        android:text="@string/btn_done"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:translationY="120dp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="@id/llLocation"
+        android:layout_height="wrap_content">
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

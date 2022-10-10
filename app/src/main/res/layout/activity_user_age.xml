@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteBack"
+    tools:context=".UserAgeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/actionBarAge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimaryGreen"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imgBackArrowAge"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtActionBarAge"
+            android:text="@string/action_bar_title"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:translationX="-17dp"
+            android:textColor="@color/colorWhite"
+
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserAge"
+        app:layout_constraintTop_toBottomOf="@id/actionBarAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        app:civ_border_width="2dp"
+        android:translationY="50dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        app:civ_border_color="@color/colorLightGrey"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_height="wrap_content">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edtAge"
+        app:layout_constraintTop_toBottomOf="@id/imgUserAge"
+        android:id="@+id/txtAgeTitle"
+        android:text="@string/age_title"
+        android:gravity="center"
+        android:translationY="45dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorDarkGrey"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="20sp"
+
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textfield.TextInputLayout
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/edtAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:translationY="40dp"
+        app:boxStrokeColor="@color/colorSecondaryGreen"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginEnd="45dp"
+        android:hint="@string/age_hint"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorDarkGrey"
+        app:layout_constraintTop_toBottomOf="@id/txtAgeTitle"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            >
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/edtAge"
+        app:layout_constraintTop_toBottomOf="@id/edtAge"
+        android:id="@+id/txtAgeNext"
+        android:text="@string/next_btn"
+        android:gravity="center"
+        app:fontFamily="@font/roboto_bold"
+        android:textStyle="bold"
+        android:translationY="100dp"
+        android:textColor="@color/colorSecondaryGreen"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18sp"
+
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

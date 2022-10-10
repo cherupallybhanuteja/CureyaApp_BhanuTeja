@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cureya_chatbot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CUREYA_Chatbot">
+        <activity
+            android:name=".ui.payment.PaymentFragment"
+            android:exported="true" />
+        <activity
+            android:name=".ui.quizpart.ViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.quizpart.QuizActivity"
+            android:exported="true" />
+        <activity android:name=".UserAgeActivity" />
+        <activity
+            android:name=".ChangeLanguage"
+            android:exported="true" />
+        <activity android:name=".UserProfessionActivity" />
+        <activity android:name=".UserLocationActivity" />
+        <activity android:name=".UserGenderActivity" />
+        <activity android:name=".UserNameActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChatActivity" />
+        <activity
+            android:name=".ChatNavigation"
+            android:label="@string/title_activity_chat_navigation"
+            android:theme="@style/Theme.CUREYA_Chatbot.NoActionBar" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

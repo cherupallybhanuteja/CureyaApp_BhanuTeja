@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "846096133716",
+    "firebase_url": "https://cureyabot-default-rtdb.firebaseio.com",
+    "project_id": "cureyabot",
+    "storage_bucket": "cureyabot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846096133716:android:5f214bb6d5a110d2cdc7c1",
+        "android_client_info": {
+          "package_name": "com.example.cureya_chatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846096133716-ft9qbg4bbk957shp05eq9h560r0pcdee.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cureya_chatbot",
+            "certificate_hash": "e02d03b92d01db44221f135ca57f840fdcb431b7"
+          }
+        },
+        {
+          "client_id": "846096133716-vdn32ivknek3k8k1jrq058lf39idlqd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkJpaWTtECwWc7eoGGlzWrUdogo4RF3ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846096133716-vdn32ivknek3k8k1jrq058lf39idlqd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

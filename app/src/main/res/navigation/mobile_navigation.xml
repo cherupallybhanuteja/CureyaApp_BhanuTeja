@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:label="Hey"
+        android:name="com.example.cureya_chatbot.ui.homeScreen.HomeScreenFragment"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+<!--    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.cureya_chatbot.ui.chat.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat"/>-->
+
+    <fragment
+        android:id="@+id/nav_counsellor"
+        android:name="com.example.cureya_chatbot.ui.counsellor.CounsellorFragment"
+        android:label="@string/menu_counsellor"
+        tools:layout="@layout/fragment_counsellor"/>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.cureya_chatbot.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.cureya_chatbot.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.example.cureya_chatbot.ui.contactUs.ContactUsFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/nav_relaxation"
+        android:name="com.example.cureya_chatbot.ui.relaxation.RelaxationFragment"
+        android:label="Relaxation"
+        tools:layout="@layout/fragment_relaxation" />
+    <activity
+        android:id="@+id/nav_add_quiz"
+        android:name="com.example.cureya_chatbot.ui.quizpart.ViewActivity"
+        android:label="view quiz"
+        tools:layout="@layout/activity_view" />
+
+    <activity
+        android:id="@+id/nav_quiz"
+        android:name="com.example.cureya_chatbot.ui.quizpart.QuizActivity"
+        android:label="add quiz"
+        tools:layout="@layout/activity_quiz" />
+    <activity
+        android:id="@+id/nav_payment"
+        android:name="com.example.cureya_chatbot.ui.payment.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/activity_payment_fragment"/>
+
+
+</navigation>

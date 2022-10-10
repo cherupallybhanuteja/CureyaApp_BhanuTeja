@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhiteBack"
+    android:layout_height="match_parent"
+    tools:context=".ui.quizpart.QuizActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/actionBarName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimaryGreen"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:id="@+id/txtActionBarName"
+            android:text="@string/action_bar_title"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+
+            >
+
+        </com.google.android.material.textview.MaterialTextView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="16dp"
+        android:hint="Full Question"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/optn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="add option"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/optn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="add option"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optn1" />
+    <EditText
+        android:id="@+id/optn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="add  option"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optn2" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorSecondaryGreen"
+        android:text="save"
+        android:textColor="@color/browser_actions_bg_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optn3" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

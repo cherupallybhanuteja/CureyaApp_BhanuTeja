@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhiteBack"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/menu_home">
+
+        </item>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_baseline_phone_24"
+            android:title="@string/menu_report" />
+        <item
+            android:id="@+id/nav_relaxation"
+            android:icon="@drawable/ic_baseline_music_video_24"
+            android:title="@string/relaxation" />
+        <item
+            android:id="@+id/nav_counsellor"
+            android:icon="@drawable/ic_baseline_counselor"
+            android:title="@string/menu_counsellor" />
+        <item
+            android:id="@+id/sign_out"
+            android:icon="@drawable/ic_baseline_sign_out"
+            android:title="@string/sign_out" />
+        <item
+            android:id="@+id/nav_add_quiz"
+            android:icon="@drawable/ic_baseline_preview_24"
+            android:title="@string/Quiz" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_baseline_add_box_24"
+            android:title="@string/AddQuiz" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_baseline_attach_payment_24"
+            android:title="@string/payment_gateway"/>
+
+
+    </group>
+<!--
+    <group android:checkableBehavior="single">
+        <item android:title="Additional">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_menu_about"
+                    android:title="@string/menu_about" />
+            </menu>
+        </item>
+
+    </group>-->
+</menu>
